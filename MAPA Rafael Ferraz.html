@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Rafael Ferraz</title>
+    <style>
+        /* --- Configurações Globais --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077b6;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0096c7;
+        }
+
+        /* --- Layout Estrutural (Responsivo) --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* --- Cabeçalho & Menu --- */
+        header {
+            background: linear-gradient(135deg, #0077b6, #03045e);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #caf0f8;
+            text-decoration: underline;
+        }
+
+        /* --- Seções Principais (Main) --- */
+        section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: #03045e;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 5px;
+        }
+
+        /* Lista de Habilidades */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .skills-list li {
+            background-color: #0077b6;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Projetos */
+        article {
+            background-color: #f8f9fa;
+            border-left: 5px solid #0096c7;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        article h3 {
+            color: #0077b6;
+            margin-bottom: 8px;
+        }
+
+        /* --- Barra Lateral (Aside) --- */
+        aside {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        aside h2 {
+            color: #03045e;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* --- Rodapé --- */
+        footer {
+            background-color: #03045e;
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        /* --- Responsividade (Media Query para Celular) --- */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr; /* Transforma as duas colunas em uma só no celular */
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="C:\Users\Shock\Downloads\foto perfil.jpeg" alt="Minha Foto de Perfil" class="profile-img">
+            <h1>Rafael Ferraz</h1>
+            <p>"A busca por conhecimento nunca pode parar."</p>
+            
+            <nav>
+                <a href="#sobre">Sobre Mim</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            
+            <main>
+                <section id="sobre">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá! Sou um desenvolvedor em formação, apaixonado por tecnologia, inovação e resolução de problemas. Atualmente, estou focando meus estudos no desenvolvimento web (Front-end), aprendendo a construir interfaces modernas, limpas e totalmente focadas na experiência do usuário.</p>
+                    <p>Busco constantemente evoluir minhas habilidades técnicas e criativas, sempre atento as melhores práticas do mercado de tecnologia.</p>
+                </section>
+
+                <section id="habilidades">
+                    <h2>Habilidades Técnicas</h2>
+                    <p>Aqui estão algumas das tecnologias e ferramentas com as quais tenho familiaridade e venho desenvolvendo projetos:</p>
+                    <ul class="skills-list">
+                        <li>HTML Semântico</li>
+                        <li>CSS Avançado (Flexbox / Grid)</li>
+                        <li>Design Responsivo</li>
+                        <li>Lógica de Programação</li>
+                        <li>C / C++ / C#</li>
+                    </ul>
+                </section>
+
+                <section id="projetos">
+                    <h2>Projetos Recentes</h2>
+                    <p>Confira abaixo alguns dos projetos práticos que desenvolvi para aplicar meus conhecimentos:</p>
+
+                    <article>
+                        <h3>01. Sistema de Portfolio Pessoal</h3>
+                        <p>Desenvolvimento desta landing page responsiva utilizando exclusivamente HTML5 puro e CSS3, com foco em semântica web e layouts modernos com CSS Grid.</p>
+                    </article>
+
+                    <article>
+                        <h3>02. Em Desenvolvimento</h3>
+                        <p>O próximo projeto ainda está em desenvolvimento. Logo mais a página será atualizada.</p>
+                    </article>
+                </section>
+            </main>
+
+            <aside>
+                <h2>Curiosidades & Links</h2>
+                <p style="margin-bottom: 15px; font-size: 0.95rem;">Além da programação, gosto de video games sempre antenado nas ultimas noticias, viagens para descobrir culturas novas e curtir com os amigos.</p>
+                <ul>
+                    <li><strong>GitHub:</strong>&nbsp;<a href="https://github.com/ShockEng" target="_blank">@ShockEng</a></li>
+                    <li><strong>LinkedIn:</strong>&nbsp;<a href="https://www.linkedin.com/in/rafael-m-ferraz/" target="_blank">/in/rafael-m-ferraz</a></li>
+                    <li><strong>Instagram:</strong>&nbsp;<a href="https://www.instagram.com/rafaelferraz96/" target="_blank">@RafaelFerraz</a></li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <footer id="contato">
+            <p><strong>Contato:</strong> 96rafaelferraz@gmail.com | Telefone: (14) 98108-1479</p>
+            <p>&copy; 2026 Rafael Ferraz. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
